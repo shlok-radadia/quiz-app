@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Create</title>
+    <link rel="shortcut icon" href="../../../images/logo_01.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/19130d74a3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="sliding_menu" class="sliding_menu_close">
+        <button id="menu_close">&times;</button>
+        <div id="inner_sliding_menu">
+            <span class="menu_btn" id="go_home">Home</span> <br><br>
+            <span class="menu_btn" id="go_profile">Profile</span> <br><br>
+            <span class="menu_btn" id="go_create_quiz">Create Quiz</span> <br><br>
+        </div>
+    </div>
+
+    <div id="header">
+        <div id="logo">
+          <img src="../../../images/logo_02.png" alt="No Image">
+        </div>
+        <div id="profile" onclick="profile()">
+            <img src="../../../images/default_pfp.png" alt="No Image">
+        </div>
+    </div>
+
+
+    <div id="content">
+        <button id="menu_open">&#9776;</button>
+        <div id="quiz_creation">
+            <form id="create">
+                Title: <input type="text" name="title" id="title"><br><br>
+                Description: <input type="text" name="desc" id="desc"><br><br>
+                Section: <select name="section" id="section">
+                    <option value="" disabled selected hidden>-</option>
+                    <option value="Physics">Physics</option>
+                    <option value="Chemistry">Chemistry</option>
+                    <option value="Mathematics">Mathematics</option>
+                    <option value="Biology">Biology</option>
+                    <option value="Computer Science">Computer Science</option>
+                    <option value="Literature">Literature</option>
+                    <option value="Economics">Economics</option>
+                    <option value="Geography">Geography</option>
+                    <option value="Logical Reasoning">Logical Reasoning</option>
+                    <option value="Mythology">Mythology</option>
+                </select><br><br>
+                Duration: <input type="number" name="duration" id="duration" min="0"> minutes<br><br><br>
+                Question: <input type="text" name="question" id="question"><br><br>
+                Option 1: <input type="text" name="opt1" id="opt1" class="options"><br><br>
+                Option 2: <input type="text" name="opt2" id="opt2" class="options"><br><br>
+                Option 3: <input type="text" name="opt3" id="opt3" class="options"><br><br>
+                Option 4: <input type="text" name="opt4" id="opt4" class="options"><br><br>
+                Correct Option: <select name="correct_option" id="correct_option">
+                    <option value="" disabled selected hidden>-</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                    <option value="4">Option 4</option>
+                </select><br><br>
+                Positive Marks: <input type="number" name="positive" class="marks" id="positive"><br><br>
+                Negative Marks: <input type="number" name="negative" class="marks" id="negative"><br><br>
+                <input type="button" value="&nbsp;Add Question&nbsp;" id="add">
+                <input type="button" id="gemini" value="&nbsp;Gemini&nbsp;"><br><br><br>
+                <input type="submit" value="&nbsp;Create Quiz&nbsp;" id="submit"><br><br>
+            </form>
+        </div>
+
+        <div id="preview">
+
+        </div>
+    </div>
+
+
+    <div id="footer">
+        <marquee direction="left">
+          <span class="det">Name:</span> Shlok Radadia
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <span class="det">Admission No.:</span> 24JE0694
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <span class="det">Email:</span> <a href="mailto:shlok2006radadia@gmail.com">shlok2006radadia@gmail.com</a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <span class="det">Phone No.:</span> 9558690860
+        </marquee>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

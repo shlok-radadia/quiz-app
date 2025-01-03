@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="shortcut icon" href="../../../images/logo_01.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/19130d74a3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="sliding_menu" class="sliding_menu_close">
+        <button id="menu_close">&times;</button>
+        <div id="inner_sliding_menu">
+            <span class="menu_btn" id="go_home">Home</span> <br><br>
+            <span class="menu_btn" id="go_profile">Profile</span> <br><br>
+            <span class="menu_btn" id="go_create_quiz">Create Quiz</span> <br><br>
+        </div>
+    </div>
+
+    <div id="header">
+        <div id="logo">
+          <img src="../../../images/logo_02.png" alt="No Image">
+        </div>
+        <div id="profile" onclick="profile()">
+            <img src="../../../images/default_pfp.png" alt="No Image">
+        </div>
+    </div>
+
+
+    <div id="content">
+        <button id="menu_open">&#9776;</button>
+        <div id="profile_data">
+            <div id="inner_profile_data">
+                <img id="profile_pfp" alt="Loading..." src="../../../images/loading.gif"> 
+                <span id="pfp_edit"><i class="fa-solid fa-pencil"></i></span><br><br><br><br>
+                <span class="profile_data_heading">Username: </span><span id="username"><i class="fa-solid fa-spinner fa-spin"></i></span> <br><br>
+                <span class="profile_data_heading">Email: </span><span id="email"><i class="fa-solid fa-spinner fa-spin"></i></span> <br><br>
+                <span class="profile_data_heading">Role: </span><span id="role"><i class="fa-solid fa-spinner fa-spin"></i></span> <br><br>
+                <span class="profile_data_heading">Average Accuracy: </span><span id="avg_accuracy"><i class="fa-solid fa-spinner fa-spin"></i></span> <br><br>
+                <span class="profile_data_heading">Total Quizzes: </span><span id="total_quiz"><i class="fa-solid fa-spinner fa-spin"></i></span> <br><br>
+                <button id="logout">Logout</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="footer">
+        <marquee direction="left">
+          <span class="det">Name:</span> Shlok Radadia
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <span class="det">Admission No.:</span> 24JE0694
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <span class="det">Email:</span> <a href="mailto:shlok2006radadia@gmail.com">shlok2006radadia@gmail.com</a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <span class="det">Phone No.:</span> 9558690860
+        </marquee>
+    </div>
+
+    <div class="from_above from_above_close">
+        <div id="pfp_change">
+            <button id="close_pfp"><i class="fa-solid fa-xmark"></i></button>
+
+            <div id="pfp_preview_container">
+                <img id="pfp_preview" alt="Loading..." src="../../../images/loading.gif">
+            </div>
+            
+            <span id="upload_new_pfp">
+                <label for="file_upload" id="upload_text">
+                    Upload <i class="fa-solid fa-upload"></i>
+                </label>
+                <input type="file" id="file_upload" accept=".png, .jpg, .jpeg">
+            </span>
+            <button id="new_pfp_save" disabled>Save</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
